@@ -7,7 +7,7 @@
 
   <Targets>
     <Target>
-      <TargetName>GPIO</TargetName>
+      <TargetName>Tick-Timer</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
@@ -48,7 +48,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\Objects\</OutputDirectory>
-          <OutputName>GPIO-Output</OutputName>
+          <OutputName>Tick-TImer</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
@@ -335,7 +335,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F40_41xxx</Define>
               <Undefine></Undefine>
-              <IncludePath>..\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Libraries\CMSIS\Device\ST\STM32F4xx\Include;..\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Libraries\CMSIS\Include;..\..\FreeRTOS-STM32-HAL-Examples\FreeRTOS-Source\include;..\..\FreeRTOS-STM32-HAL-Examples\FreeRTOS-Source\portable\RVDS\ARM_CM4F;..\RTOS-Test</IncludePath>
+              <IncludePath>..\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Libraries\CMSIS\Device\ST\STM32F4xx\Include;..\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Libraries\CMSIS\Include;..\FreeRTOS-Source\include;..\FreeRTOS-Source\portable\RVDS\ARM_CM4F;..\Tick-Timer</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -422,13 +422,13 @@
       <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.0.1" condition="ARMv6_7_8-M Device">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.0.1"/>
         <targetInfos>
-          <targetInfo name="GPIO"/>
+          <targetInfo name="Tick-Timer"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.6.0" condition="STM32F4 CMSIS">
         <package name="STM32F4xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.11.0"/>
         <targetInfos>
-          <targetInfo name="GPIO"/>
+          <targetInfo name="Tick-Timer"/>
         </targetInfos>
       </component>
     </components>
@@ -438,7 +438,7 @@
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.6.0" condition="STM32F4 CMSIS"/>
         <package name="STM32F4xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.11.0"/>
         <targetInfos>
-          <targetInfo name="GPIO"/>
+          <targetInfo name="Tick-Timer"/>
         </targetInfos>
       </file>
       <file attr="config" category="source" name="Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c" version="2.6.0">
@@ -446,7 +446,7 @@
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.6.0" condition="STM32F4 CMSIS"/>
         <package name="STM32F4xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.11.0"/>
         <targetInfos>
-          <targetInfo name="GPIO"/>
+          <targetInfo name="Tick-Timer"/>
         </targetInfos>
       </file>
     </files>

@@ -97,7 +97,8 @@ void vPortSetupTimerInterrupt (void) {
     #endif
 
     /*
-        We want the time count to be 500msec (half a second).
+        As configTICK_RATE_HZ = 1000, so tick timer
+        need to generate interrupt at the rate of 1000/sec (1msec delay).
         As the input frequency is 16khz so the total
         counts required for 1msec delay:
         
