@@ -1,0 +1,361 @@
+Component: ARM Compiler 5.06 update 4 (build 422) Tool: armlink [4d35d2]
+
+==============================================================================
+
+Section Cross References
+
+    .\objects\stm32f4xx_it.o(i.SysTick_Handler) refers to .\objects\stm32f4xx_hal.o(i.HAL_IncTick) for HAL_IncTick
+    .\objects\stm32f4xx_it.o(i.SysTick_Handler) refers to .\objects\stm32f4xx_hal_cortex.o(i.HAL_SYSTICK_IRQHandler) for HAL_SYSTICK_IRQHandler
+    .\objects\main.o(i.main) refers to .\objects\stm32f4xx_hal.o(i.HAL_Init) for HAL_Init
+    .\objects\main.o(i.main) refers to .\objects\stm32f4xx_hal_gpio.o(i.HAL_GPIO_Init) for HAL_GPIO_Init
+    .\objects\main.o(i.main) refers to .\objects\stm32f4xx_hal_gpio.o(i.HAL_GPIO_TogglePin) for HAL_GPIO_TogglePin
+    .\objects\main.o(i.main) refers to .\objects\stm32f4xx_hal.o(i.HAL_Delay) for HAL_Delay
+    .\objects\stm32f4xx_hal_gpio.o(i.HAL_GPIO_EXTI_IRQHandler) refers to .\objects\stm32f4xx_hal_gpio.o(i.HAL_GPIO_EXTI_Callback) for HAL_GPIO_EXTI_Callback
+    .\objects\stm32f4xx_hal_cortex.o(i.HAL_NVIC_GetPriorityGrouping) refers to .\objects\stm32f4xx_hal_cortex.o(i.NVIC_GetPriorityGrouping) for NVIC_GetPriorityGrouping
+    .\objects\stm32f4xx_hal_cortex.o(i.HAL_NVIC_SetPriority) refers to .\objects\stm32f4xx_hal_cortex.o(i.NVIC_GetPriorityGrouping) for NVIC_GetPriorityGrouping
+    .\objects\stm32f4xx_hal_cortex.o(i.HAL_NVIC_SetPriority) refers to .\objects\stm32f4xx_hal_cortex.o(i.NVIC_SetPriority) for NVIC_SetPriority
+    .\objects\stm32f4xx_hal_cortex.o(i.HAL_SYSTICK_Config) refers to .\objects\stm32f4xx_hal_cortex.o(i.NVIC_SetPriority) for NVIC_SetPriority
+    .\objects\stm32f4xx_hal_cortex.o(i.HAL_SYSTICK_IRQHandler) refers to .\objects\stm32f4xx_hal_cortex.o(i.HAL_SYSTICK_Callback) for HAL_SYSTICK_Callback
+    .\objects\stm32f4xx_hal.o(i.HAL_DeInit) refers to .\objects\stm32f4xx_hal.o(i.HAL_MspDeInit) for HAL_MspDeInit
+    .\objects\stm32f4xx_hal.o(i.HAL_Delay) refers to .\objects\stm32f4xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    .\objects\stm32f4xx_hal.o(i.HAL_Delay) refers to .\objects\stm32f4xx_hal.o(.data) for uwTickFreq
+    .\objects\stm32f4xx_hal.o(i.HAL_GetTick) refers to .\objects\stm32f4xx_hal.o(.data) for uwTick
+    .\objects\stm32f4xx_hal.o(i.HAL_GetTickFreq) refers to .\objects\stm32f4xx_hal.o(.data) for uwTickFreq
+    .\objects\stm32f4xx_hal.o(i.HAL_GetTickPrio) refers to .\objects\stm32f4xx_hal.o(.data) for uwTickPrio
+    .\objects\stm32f4xx_hal.o(i.HAL_IncTick) refers to .\objects\stm32f4xx_hal.o(.data) for uwTick
+    .\objects\stm32f4xx_hal.o(i.HAL_Init) refers to .\objects\stm32f4xx_hal_cortex.o(i.HAL_NVIC_SetPriorityGrouping) for HAL_NVIC_SetPriorityGrouping
+    .\objects\stm32f4xx_hal.o(i.HAL_Init) refers to .\objects\stm32f4xx_hal.o(i.HAL_InitTick) for HAL_InitTick
+    .\objects\stm32f4xx_hal.o(i.HAL_Init) refers to .\objects\stm32f4xx_hal.o(i.HAL_MspInit) for HAL_MspInit
+    .\objects\stm32f4xx_hal.o(i.HAL_InitTick) refers to .\objects\stm32f4xx_hal_cortex.o(i.HAL_SYSTICK_Config) for HAL_SYSTICK_Config
+    .\objects\stm32f4xx_hal.o(i.HAL_InitTick) refers to .\objects\stm32f4xx_hal_cortex.o(i.HAL_NVIC_SetPriority) for HAL_NVIC_SetPriority
+    .\objects\stm32f4xx_hal.o(i.HAL_InitTick) refers to .\objects\stm32f4xx_hal.o(.data) for uwTickFreq
+    .\objects\stm32f4xx_hal.o(i.HAL_InitTick) refers to .\objects\system_stm32f4xx.o(.data) for SystemCoreClock
+    .\objects\stm32f4xx_hal.o(i.HAL_SetTickFreq) refers to .\objects\stm32f4xx_hal.o(i.HAL_InitTick) for HAL_InitTick
+    .\objects\stm32f4xx_hal.o(i.HAL_SetTickFreq) refers to .\objects\stm32f4xx_hal.o(.data) for uwTickFreq
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_Base_DeInit) refers to .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_Base_MspDeInit) for HAL_TIM_Base_MspDeInit
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_Base_Init) refers to .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_Base_MspInit) for HAL_TIM_Base_MspInit
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_Base_Init) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_Base_SetConfig) for TIM_Base_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_Base_Start_DMA) refers to .\objects\stm32f4xx_hal_dma.o(i.HAL_DMA_Start_IT) for HAL_DMA_Start_IT
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_Base_Start_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_DMAPeriodElapsedCplt) for TIM_DMAPeriodElapsedCplt
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_Base_Start_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_DMAError) for TIM_DMAError
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_ConfigClockSource) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_ETR_SetConfig) for TIM_ETR_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_ConfigClockSource) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_TI1_ConfigInputStage) for TIM_TI1_ConfigInputStage
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_ConfigClockSource) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_ITRx_SetConfig) for TIM_ITRx_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_ConfigClockSource) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_TI2_ConfigInputStage) for TIM_TI2_ConfigInputStage
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_ConfigOCrefClear) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_ETR_SetConfig) for TIM_ETR_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_DMABurst_ReadStart) refers to .\objects\stm32f4xx_hal_dma.o(i.HAL_DMA_Start_IT) for HAL_DMA_Start_IT
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_DMABurst_ReadStart) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_DMAPeriodElapsedCplt) for TIM_DMAPeriodElapsedCplt
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_DMABurst_ReadStart) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_DMAError) for TIM_DMAError
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_DMABurst_ReadStart) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_DMACaptureCplt) for TIM_DMACaptureCplt
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_DMABurst_ReadStart) refers to .\objects\stm32f4xx_hal_tim_ex.o(i.TIMEx_DMACommutationCplt) for TIMEx_DMACommutationCplt
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_DMABurst_ReadStart) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_DMATriggerCplt) for TIM_DMATriggerCplt
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_DMABurst_ReadStop) refers to .\objects\stm32f4xx_hal_dma.o(i.HAL_DMA_Abort) for HAL_DMA_Abort
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_DMABurst_WriteStart) refers to .\objects\stm32f4xx_hal_dma.o(i.HAL_DMA_Start_IT) for HAL_DMA_Start_IT
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_DMABurst_WriteStart) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_DMAPeriodElapsedCplt) for TIM_DMAPeriodElapsedCplt
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_DMABurst_WriteStart) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_DMAError) for TIM_DMAError
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_DMABurst_WriteStart) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_DMADelayPulseCplt) for TIM_DMADelayPulseCplt
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_DMABurst_WriteStart) refers to .\objects\stm32f4xx_hal_tim_ex.o(i.TIMEx_DMACommutationCplt) for TIMEx_DMACommutationCplt
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_DMABurst_WriteStart) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_DMATriggerCplt) for TIM_DMATriggerCplt
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_DMABurst_WriteStop) refers to .\objects\stm32f4xx_hal_dma.o(i.HAL_DMA_Abort) for HAL_DMA_Abort
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_Encoder_DeInit) refers to .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_Encoder_MspDeInit) for HAL_TIM_Encoder_MspDeInit
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_Encoder_Init) refers to .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_Encoder_MspInit) for HAL_TIM_Encoder_MspInit
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_Encoder_Init) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_Base_SetConfig) for TIM_Base_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_Encoder_Start) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_Encoder_Start_DMA) refers to .\objects\stm32f4xx_hal_dma.o(i.HAL_DMA_Start_IT) for HAL_DMA_Start_IT
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_Encoder_Start_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_Encoder_Start_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_DMACaptureCplt) for TIM_DMACaptureCplt
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_Encoder_Start_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_DMAError) for TIM_DMAError
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_Encoder_Start_IT) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_Encoder_Stop) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_Encoder_Stop_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_Encoder_Stop_IT) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IC_ConfigChannel) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_TI1_SetConfig) for TIM_TI1_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IC_ConfigChannel) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_TI2_SetConfig) for TIM_TI2_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IC_ConfigChannel) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_TI3_SetConfig) for TIM_TI3_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IC_ConfigChannel) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_TI4_SetConfig) for TIM_TI4_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IC_DeInit) refers to .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IC_MspDeInit) for HAL_TIM_IC_MspDeInit
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IC_Init) refers to .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IC_MspInit) for HAL_TIM_IC_MspInit
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IC_Init) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_Base_SetConfig) for TIM_Base_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IC_Start) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IC_Start_DMA) refers to .\objects\stm32f4xx_hal_dma.o(i.HAL_DMA_Start_IT) for HAL_DMA_Start_IT
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IC_Start_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IC_Start_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_DMACaptureCplt) for TIM_DMACaptureCplt
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IC_Start_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_DMAError) for TIM_DMAError
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IC_Start_IT) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IC_Stop) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IC_Stop_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IC_Stop_IT) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IRQHandler) refers to .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IC_CaptureCallback) for HAL_TIM_IC_CaptureCallback
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IRQHandler) refers to .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OC_DelayElapsedCallback) for HAL_TIM_OC_DelayElapsedCallback
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IRQHandler) refers to .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_PulseFinishedCallback) for HAL_TIM_PWM_PulseFinishedCallback
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IRQHandler) refers to .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_PeriodElapsedCallback) for HAL_TIM_PeriodElapsedCallback
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IRQHandler) refers to .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_BreakCallback) for HAL_TIMEx_BreakCallback
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IRQHandler) refers to .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_TriggerCallback) for HAL_TIM_TriggerCallback
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IRQHandler) refers to .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_CommutationCallback) for HAL_TIMEx_CommutationCallback
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OC_ConfigChannel) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_OC1_SetConfig) for TIM_OC1_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OC_ConfigChannel) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_OC2_SetConfig) for TIM_OC2_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OC_ConfigChannel) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_OC3_SetConfig) for TIM_OC3_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OC_ConfigChannel) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_OC4_SetConfig) for TIM_OC4_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OC_DeInit) refers to .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OC_MspDeInit) for HAL_TIM_OC_MspDeInit
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OC_Init) refers to .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OC_MspInit) for HAL_TIM_OC_MspInit
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OC_Init) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_Base_SetConfig) for TIM_Base_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OC_Start) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OC_Start_DMA) refers to .\objects\stm32f4xx_hal_dma.o(i.HAL_DMA_Start_IT) for HAL_DMA_Start_IT
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OC_Start_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OC_Start_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_DMADelayPulseCplt) for TIM_DMADelayPulseCplt
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OC_Start_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_DMAError) for TIM_DMAError
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OC_Start_IT) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OC_Stop) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OC_Stop_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OC_Stop_IT) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OnePulse_ConfigChannel) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_OC1_SetConfig) for TIM_OC1_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OnePulse_ConfigChannel) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_OC2_SetConfig) for TIM_OC2_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OnePulse_ConfigChannel) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_TI1_SetConfig) for TIM_TI1_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OnePulse_ConfigChannel) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_TI2_SetConfig) for TIM_TI2_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OnePulse_DeInit) refers to .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OnePulse_MspDeInit) for HAL_TIM_OnePulse_MspDeInit
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OnePulse_Init) refers to .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OnePulse_MspInit) for HAL_TIM_OnePulse_MspInit
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OnePulse_Init) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_Base_SetConfig) for TIM_Base_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OnePulse_Start) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OnePulse_Start_IT) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OnePulse_Stop) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_OnePulse_Stop_IT) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_ConfigChannel) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_OC1_SetConfig) for TIM_OC1_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_ConfigChannel) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_OC2_SetConfig) for TIM_OC2_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_ConfigChannel) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_OC3_SetConfig) for TIM_OC3_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_ConfigChannel) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_OC4_SetConfig) for TIM_OC4_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_DeInit) refers to .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_MspDeInit) for HAL_TIM_PWM_MspDeInit
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_Init) refers to .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_MspInit) for HAL_TIM_PWM_MspInit
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_Init) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_Base_SetConfig) for TIM_Base_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_Start) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_Start_DMA) refers to .\objects\stm32f4xx_hal_dma.o(i.HAL_DMA_Start_IT) for HAL_DMA_Start_IT
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_Start_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_Start_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_DMADelayPulseCplt) for TIM_DMADelayPulseCplt
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_Start_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_DMAError) for TIM_DMAError
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_Start_IT) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_Stop) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_Stop_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_Stop_IT) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_SlaveConfigSynchronization) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_SlaveTimer_SetConfig) for TIM_SlaveTimer_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_SlaveConfigSynchronization_IT) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_SlaveTimer_SetConfig) for TIM_SlaveTimer_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.TIM_DMACaptureCplt) refers to .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_IC_CaptureCallback) for HAL_TIM_IC_CaptureCallback
+    .\objects\stm32f4xx_hal_tim.o(i.TIM_DMADelayPulseCplt) refers to .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_PWM_PulseFinishedCallback) for HAL_TIM_PWM_PulseFinishedCallback
+    .\objects\stm32f4xx_hal_tim.o(i.TIM_DMAError) refers to .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_ErrorCallback) for HAL_TIM_ErrorCallback
+    .\objects\stm32f4xx_hal_tim.o(i.TIM_DMAPeriodElapsedCplt) refers to .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_PeriodElapsedCallback) for HAL_TIM_PeriodElapsedCallback
+    .\objects\stm32f4xx_hal_tim.o(i.TIM_DMATriggerCplt) refers to .\objects\stm32f4xx_hal_tim.o(i.HAL_TIM_TriggerCallback) for HAL_TIM_TriggerCallback
+    .\objects\stm32f4xx_hal_tim.o(i.TIM_SlaveTimer_SetConfig) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_ETR_SetConfig) for TIM_ETR_SetConfig
+    .\objects\stm32f4xx_hal_tim.o(i.TIM_SlaveTimer_SetConfig) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_TI1_ConfigInputStage) for TIM_TI1_ConfigInputStage
+    .\objects\stm32f4xx_hal_tim.o(i.TIM_SlaveTimer_SetConfig) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_TI2_ConfigInputStage) for TIM_TI2_ConfigInputStage
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_ConfigCommutationEvent_DMA) refers to .\objects\stm32f4xx_hal_tim_ex.o(i.TIMEx_DMACommutationCplt) for TIMEx_DMACommutationCplt
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_ConfigCommutationEvent_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_DMAError) for TIM_DMAError
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_HallSensor_DeInit) refers to .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_HallSensor_MspDeInit) for HAL_TIMEx_HallSensor_MspDeInit
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_HallSensor_Init) refers to .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_HallSensor_MspInit) for HAL_TIMEx_HallSensor_MspInit
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_HallSensor_Init) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_Base_SetConfig) for TIM_Base_SetConfig
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_HallSensor_Init) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_TI1_SetConfig) for TIM_TI1_SetConfig
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_HallSensor_Init) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_OC2_SetConfig) for TIM_OC2_SetConfig
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_HallSensor_Start) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_HallSensor_Start_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_HallSensor_Start_DMA) refers to .\objects\stm32f4xx_hal_dma.o(i.HAL_DMA_Start_IT) for HAL_DMA_Start_IT
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_HallSensor_Start_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_DMACaptureCplt) for TIM_DMACaptureCplt
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_HallSensor_Start_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_DMAError) for TIM_DMAError
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_HallSensor_Start_IT) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_HallSensor_Stop) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_HallSensor_Stop_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_HallSensor_Stop_IT) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_CCxChannelCmd) for TIM_CCxChannelCmd
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_OCN_Start) refers to .\objects\stm32f4xx_hal_tim_ex.o(i.TIM_CCxNChannelCmd) for TIM_CCxNChannelCmd
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_OCN_Start_DMA) refers to .\objects\stm32f4xx_hal_dma.o(i.HAL_DMA_Start_IT) for HAL_DMA_Start_IT
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_OCN_Start_DMA) refers to .\objects\stm32f4xx_hal_tim_ex.o(i.TIM_CCxNChannelCmd) for TIM_CCxNChannelCmd
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_OCN_Start_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_DMADelayPulseCplt) for TIM_DMADelayPulseCplt
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_OCN_Start_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_DMAError) for TIM_DMAError
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_OCN_Start_IT) refers to .\objects\stm32f4xx_hal_tim_ex.o(i.TIM_CCxNChannelCmd) for TIM_CCxNChannelCmd
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_OCN_Stop) refers to .\objects\stm32f4xx_hal_tim_ex.o(i.TIM_CCxNChannelCmd) for TIM_CCxNChannelCmd
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_OCN_Stop_DMA) refers to .\objects\stm32f4xx_hal_tim_ex.o(i.TIM_CCxNChannelCmd) for TIM_CCxNChannelCmd
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_OCN_Stop_IT) refers to .\objects\stm32f4xx_hal_tim_ex.o(i.TIM_CCxNChannelCmd) for TIM_CCxNChannelCmd
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_OnePulseN_Start) refers to .\objects\stm32f4xx_hal_tim_ex.o(i.TIM_CCxNChannelCmd) for TIM_CCxNChannelCmd
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_OnePulseN_Start_IT) refers to .\objects\stm32f4xx_hal_tim_ex.o(i.TIM_CCxNChannelCmd) for TIM_CCxNChannelCmd
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_OnePulseN_Stop) refers to .\objects\stm32f4xx_hal_tim_ex.o(i.TIM_CCxNChannelCmd) for TIM_CCxNChannelCmd
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_OnePulseN_Stop_IT) refers to .\objects\stm32f4xx_hal_tim_ex.o(i.TIM_CCxNChannelCmd) for TIM_CCxNChannelCmd
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_PWMN_Start) refers to .\objects\stm32f4xx_hal_tim_ex.o(i.TIM_CCxNChannelCmd) for TIM_CCxNChannelCmd
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_PWMN_Start_DMA) refers to .\objects\stm32f4xx_hal_dma.o(i.HAL_DMA_Start_IT) for HAL_DMA_Start_IT
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_PWMN_Start_DMA) refers to .\objects\stm32f4xx_hal_tim_ex.o(i.TIM_CCxNChannelCmd) for TIM_CCxNChannelCmd
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_PWMN_Start_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_DMADelayPulseCplt) for TIM_DMADelayPulseCplt
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_PWMN_Start_DMA) refers to .\objects\stm32f4xx_hal_tim.o(i.TIM_DMAError) for TIM_DMAError
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_PWMN_Start_IT) refers to .\objects\stm32f4xx_hal_tim_ex.o(i.TIM_CCxNChannelCmd) for TIM_CCxNChannelCmd
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_PWMN_Stop) refers to .\objects\stm32f4xx_hal_tim_ex.o(i.TIM_CCxNChannelCmd) for TIM_CCxNChannelCmd
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_PWMN_Stop_DMA) refers to .\objects\stm32f4xx_hal_tim_ex.o(i.TIM_CCxNChannelCmd) for TIM_CCxNChannelCmd
+    .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_PWMN_Stop_IT) refers to .\objects\stm32f4xx_hal_tim_ex.o(i.TIM_CCxNChannelCmd) for TIM_CCxNChannelCmd
+    .\objects\stm32f4xx_hal_tim_ex.o(i.TIMEx_DMACommutationCplt) refers to .\objects\stm32f4xx_hal_tim_ex.o(i.HAL_TIMEx_CommutationCallback) for HAL_TIMEx_CommutationCallback
+    .\objects\stm32f4xx_hal_dma.o(i.DMA_CalcBaseAndBitshift) refers to .\objects\stm32f4xx_hal_dma.o(.constdata) for flagBitshiftOffset
+    .\objects\stm32f4xx_hal_dma.o(i.HAL_DMA_Abort) refers to .\objects\stm32f4xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    .\objects\stm32f4xx_hal_dma.o(i.HAL_DMA_DeInit) refers to .\objects\stm32f4xx_hal_dma.o(i.DMA_CalcBaseAndBitshift) for DMA_CalcBaseAndBitshift
+    .\objects\stm32f4xx_hal_dma.o(i.HAL_DMA_IRQHandler) refers to .\objects\system_stm32f4xx.o(.data) for SystemCoreClock
+    .\objects\stm32f4xx_hal_dma.o(i.HAL_DMA_Init) refers to .\objects\stm32f4xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    .\objects\stm32f4xx_hal_dma.o(i.HAL_DMA_Init) refers to .\objects\stm32f4xx_hal_dma.o(i.DMA_CheckFifoParam) for DMA_CheckFifoParam
+    .\objects\stm32f4xx_hal_dma.o(i.HAL_DMA_Init) refers to .\objects\stm32f4xx_hal_dma.o(i.DMA_CalcBaseAndBitshift) for DMA_CalcBaseAndBitshift
+    .\objects\stm32f4xx_hal_dma.o(i.HAL_DMA_PollForTransfer) refers to .\objects\stm32f4xx_hal.o(i.HAL_GetTick) for HAL_GetTick
+    .\objects\stm32f4xx_hal_dma.o(i.HAL_DMA_PollForTransfer) refers to .\objects\stm32f4xx_hal_dma.o(i.HAL_DMA_Abort) for HAL_DMA_Abort
+    .\objects\stm32f4xx_hal_dma.o(i.HAL_DMA_Start) refers to .\objects\stm32f4xx_hal_dma.o(i.DMA_SetConfig) for DMA_SetConfig
+    .\objects\stm32f4xx_hal_dma.o(i.HAL_DMA_Start_IT) refers to .\objects\stm32f4xx_hal_dma.o(i.DMA_SetConfig) for DMA_SetConfig
+    .\objects\stm32f4xx_hal_dma_ex.o(i.HAL_DMAEx_MultiBufferStart) refers to .\objects\stm32f4xx_hal_dma_ex.o(i.DMA_MultiBufferSetConfig) for DMA_MultiBufferSetConfig
+    .\objects\stm32f4xx_hal_dma_ex.o(i.HAL_DMAEx_MultiBufferStart_IT) refers to .\objects\stm32f4xx_hal_dma_ex.o(i.DMA_MultiBufferSetConfig) for DMA_MultiBufferSetConfig
+    .\objects\tasks.o(i.prvIdleTask) refers to .\objects\tasks.o(privileged_functions) for prvCheckTasksWaitingTermination
+    .\objects\tasks.o(i.prvResetNextTaskUnblockTime) refers to .\objects\tasks.o(privileged_data) for pxDelayedTaskList
+    .\objects\tasks.o(i.xTaskNotifyStateClear) refers to .\objects\port.o(i.vPortEnterCritical) for vPortEnterCritical
+    .\objects\tasks.o(i.xTaskNotifyStateClear) refers to .\objects\port.o(i.vPortExitCritical) for vPortExitCritical
+    .\objects\tasks.o(i.xTaskNotifyStateClear) refers to .\objects\tasks.o(privileged_data) for pxCurrentTCB
+    .\objects\tasks.o(privileged_functions) refers to .\objects\list.o(i.vListInitialise) for vListInitialise
+    .\objects\tasks.o(privileged_functions) refers to .\objects\port.o(i.vPortEnterCritical) for vPortEnterCritical
+    .\objects\tasks.o(privileged_functions) refers to .\objects\list.o(i.vListInsertEnd) for vListInsertEnd
+    .\objects\tasks.o(privileged_functions) refers to .\objects\port.o(i.vPortExitCritical) for vPortExitCritical
+    .\objects\tasks.o(privileged_functions) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(aeabi_memset.o)(.text) for __aeabi_memset
+    .\objects\tasks.o(privileged_functions) refers to .\objects\list.o(i.vListInitialiseItem) for vListInitialiseItem
+    .\objects\tasks.o(privileged_functions) refers to .\objects\port.o(privileged_functions) for vPortStoreTaskMPUSettings
+    .\objects\tasks.o(privileged_functions) refers to .\objects\heap_2.o(privileged_functions) for pvPortMalloc
+    .\objects\tasks.o(privileged_functions) refers to .\objects\list.o(i.uxListRemove) for uxListRemove
+    .\objects\tasks.o(privileged_functions) refers to .\objects\tasks.o(i.prvResetNextTaskUnblockTime) for prvResetNextTaskUnblockTime
+    .\objects\tasks.o(privileged_functions) refers to .\objects\tasks.o(privileged_data) for pxReadyTasksLists
+    .\objects\tasks.o(privileged_functions) refers to .\objects\list.o(i.vListInsert) for vListInsert
+    .\objects\tasks.o(privileged_functions) refers to .\objects\port.o(i.vPortValidateInterruptPriority) for vPortValidateInterruptPriority
+    .\objects\tasks.o(privileged_functions) refers to .\objects\tasks.o(i.prvIdleTask) for prvIdleTask
+    .\objects\port.o(privileged_functions) refers to .\objects\port.o(privileged_functions) for prvSVCHandler
+    .\objects\port.o(privileged_functions) refers to .\objects\tasks.o(privileged_functions) for vTaskSwitchContext
+    .\objects\port.o(privileged_functions) refers to .\objects\tasks.o(privileged_data) for pxCurrentTCB
+    .\objects\port.o(i.vPortEnterCritical) refers to .\objects\port.o(.emb_text) for xPortRaisePrivilege
+    .\objects\port.o(i.vPortEnterCritical) refers to .\objects\port.o(.data) for uxCriticalNesting
+    .\objects\port.o(i.vPortExitCritical) refers to .\objects\port.o(.emb_text) for xPortRaisePrivilege
+    .\objects\port.o(i.vPortExitCritical) refers to .\objects\port.o(.data) for uxCriticalNesting
+    .\objects\port.o(i.vPortValidateInterruptPriority) refers to .\objects\port.o(.emb_text) for __asm___6_port_c_39a90d8d__prvPortGetIPSR
+    .\objects\port.o(i.vPortValidateInterruptPriority) refers to .\objects\port.o(.data) for ucMaxSysCallPriority
+    .\objects\port.o(privileged_functions) refers to .\objects\port.o(privileged_functions) for __asm___6_port_c_39a90d8d__prvRestoreContextOfFirstTask
+    .\objects\port.o(privileged_functions) refers to .\objects\port.o(.emb_text) for __asm___6_port_c_39a90d8d__vPortEnableVFP
+    .\objects\port.o(privileged_functions) refers to .\objects\tasks.o(privileged_functions) for xTaskIncrementTick
+    .\objects\port.o(privileged_functions) refers to .\objects\system_stm32f4xx.o(.data) for SystemCoreClock
+    .\objects\port.o(privileged_functions) refers to .\objects\port.o(.data) for ucMaxSysCallPriority
+    .\objects\heap_2.o(i.prvHeapInit) refers to .\objects\heap_2.o(.bss) for ucHeap
+    .\objects\heap_2.o(i.prvHeapInit) refers to .\objects\heap_2.o(.data) for xStart
+    .\objects\heap_2.o(privileged_functions) refers to .\objects\tasks.o(privileged_functions) for vTaskSuspendAll
+    .\objects\heap_2.o(privileged_functions) refers to .\objects\heap_2.o(i.prvHeapInit) for prvHeapInit
+    .\objects\heap_2.o(privileged_functions) refers to .\objects\heap_2.o(.data) for xHeapHasBeenInitialised
+    .\objects\startup_stm32f407xx.o(STACK) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(heapauxi.o)(.text) for __use_two_region_memory
+    .\objects\startup_stm32f407xx.o(HEAP) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(heapauxi.o)(.text) for __use_two_region_memory
+    .\objects\startup_stm32f407xx.o(RESET) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(heapauxi.o)(.text) for __use_two_region_memory
+    .\objects\startup_stm32f407xx.o(RESET) refers to .\objects\startup_stm32f407xx.o(STACK) for __initial_sp
+    .\objects\startup_stm32f407xx.o(RESET) refers to .\objects\startup_stm32f407xx.o(.text) for Reset_Handler
+    .\objects\startup_stm32f407xx.o(RESET) refers to .\objects\stm32f4xx_it.o(i.NMI_Handler) for NMI_Handler
+    .\objects\startup_stm32f407xx.o(RESET) refers to .\objects\stm32f4xx_it.o(i.HardFault_Handler) for HardFault_Handler
+    .\objects\startup_stm32f407xx.o(RESET) refers to .\objects\stm32f4xx_it.o(i.MemManage_Handler) for MemManage_Handler
+    .\objects\startup_stm32f407xx.o(RESET) refers to .\objects\stm32f4xx_it.o(i.BusFault_Handler) for BusFault_Handler
+    .\objects\startup_stm32f407xx.o(RESET) refers to .\objects\stm32f4xx_it.o(i.UsageFault_Handler) for UsageFault_Handler
+    .\objects\startup_stm32f407xx.o(RESET) refers to .\objects\stm32f4xx_it.o(i.SVC_Handler) for SVC_Handler
+    .\objects\startup_stm32f407xx.o(RESET) refers to .\objects\port.o(privileged_functions) for SVC_Handler
+    .\objects\startup_stm32f407xx.o(RESET) refers to .\objects\stm32f4xx_it.o(i.DebugMon_Handler) for DebugMon_Handler
+    .\objects\startup_stm32f407xx.o(RESET) refers to .\objects\stm32f4xx_it.o(i.PendSV_Handler) for PendSV_Handler
+    .\objects\startup_stm32f407xx.o(RESET) refers to .\objects\stm32f4xx_it.o(i.SysTick_Handler) for SysTick_Handler
+    .\objects\startup_stm32f407xx.o(.text) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(heapauxi.o)(.text) for __use_two_region_memory
+    .\objects\startup_stm32f407xx.o(.text) refers to .\objects\system_stm32f4xx.o(i.SystemInit) for SystemInit
+    .\objects\startup_stm32f407xx.o(.text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__main.o)(!!!main) for __main
+    .\objects\startup_stm32f407xx.o(.text) refers to .\objects\startup_stm32f407xx.o(HEAP) for Heap_Mem
+    .\objects\startup_stm32f407xx.o(.text) refers to .\objects\startup_stm32f407xx.o(STACK) for Stack_Mem
+    .\objects\system_stm32f4xx.o(i.SystemCoreClockUpdate) refers to .\objects\system_stm32f4xx.o(.data) for SystemCoreClock
+    .\objects\system_stm32f4xx.o(i.SystemCoreClockUpdate) refers to .\objects\system_stm32f4xx.o(.constdata) for AHBPrescTable
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(aeabi_memset.o)(.text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rt_memclr.o)(.text) for _memset
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__main.o)(!!!main) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry.o)(.ARM.Collect$$rtentry$$00000000) for __rt_entry
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry.o)(.ARM.Collect$$rtentry$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry2.o)(.ARM.Collect$$rtentry$$0000000A) for __rt_entry_li
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry.o)(.ARM.Collect$$rtentry$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry2.o)(.ARM.Collect$$rtentry$$0000000D) for __rt_entry_main
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry.o)(.ARM.Collect$$rtentry$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry2.o)(.ARM.Collect$$rtentry$$0000000C) for __rt_entry_postli_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry.o)(.ARM.Collect$$rtentry$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry2.o)(.ARM.Collect$$rtentry$$00000009) for __rt_entry_postsh_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry.o)(.ARM.Collect$$rtentry$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry2.o)(.ARM.Collect$$rtentry$$00000002) for __rt_entry_presh_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry.o)(.ARM.Collect$$rtentry$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry4.o)(.ARM.Collect$$rtentry$$00000004) for __rt_entry_sh
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rt_memclr.o)(.text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rt_memclr_w.o)(.text) for _memset_w
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry2.o)(.ARM.Collect$$rtentry$$00000008) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(boardinit2.o)(.text) for _platform_post_stackheap_init
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry2.o)(.ARM.Collect$$rtentry$$0000000A) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit.o)(.ARM.Collect$$libinit$$00000000) for __rt_lib_init
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry2.o)(.ARM.Collect$$rtentry$$0000000B) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(boardinit3.o)(.text) for _platform_post_lib_init
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry2.o)(.ARM.Collect$$rtentry$$0000000D) refers to .\objects\main.o(i.main) for main
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry2.o)(.ARM.Collect$$rtentry$$0000000D) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(exit.o)(.text) for exit
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry2.o)(.ARM.exidx) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry2.o)(.ARM.Collect$$rtentry$$00000001) for .ARM.Collect$$rtentry$$00000001
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry2.o)(.ARM.exidx) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry2.o)(.ARM.Collect$$rtentry$$00000008) for .ARM.Collect$$rtentry$$00000008
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry2.o)(.ARM.exidx) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry2.o)(.ARM.Collect$$rtentry$$0000000A) for .ARM.Collect$$rtentry$$0000000A
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry2.o)(.ARM.exidx) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry2.o)(.ARM.Collect$$rtentry$$0000000B) for .ARM.Collect$$rtentry$$0000000B
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry2.o)(.ARM.exidx) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry2.o)(.ARM.Collect$$rtentry$$0000000D) for .ARM.Collect$$rtentry$$0000000D
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry4.o)(.ARM.Collect$$rtentry$$00000004) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(sys_stackheap_outer.o)(.text) for __user_setup_stackheap
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry4.o)(.ARM.exidx) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__rtentry4.o)(.ARM.Collect$$rtentry$$00000004) for .ARM.Collect$$rtentry$$00000004
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(sys_stackheap_outer.o)(.text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libspace.o)(.text) for __user_perproc_libspace
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(sys_stackheap_outer.o)(.text) refers to .\objects\startup_stm32f407xx.o(.text) for __user_initial_stackheap
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(exit.o)(.text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rtexit.o)(.ARM.Collect$$rtexit$$00000000) for __rt_exit
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit.o)(.ARM.Collect$$libinit$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$0000002E) for __rt_lib_init_alloca_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit.o)(.ARM.Collect$$libinit$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$0000002C) for __rt_lib_init_argv_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit.o)(.ARM.Collect$$libinit$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$0000001B) for __rt_lib_init_atexit_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit.o)(.ARM.Collect$$libinit$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$00000021) for __rt_lib_init_clock_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit.o)(.ARM.Collect$$libinit$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$00000032) for __rt_lib_init_cpp_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit.o)(.ARM.Collect$$libinit$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$00000030) for __rt_lib_init_exceptions_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit.o)(.ARM.Collect$$libinit$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$00000001) for __rt_lib_init_fp_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit.o)(.ARM.Collect$$libinit$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$0000001F) for __rt_lib_init_fp_trap_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit.o)(.ARM.Collect$$libinit$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$00000023) for __rt_lib_init_getenv_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit.o)(.ARM.Collect$$libinit$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$0000000A) for __rt_lib_init_heap_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit.o)(.ARM.Collect$$libinit$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$00000011) for __rt_lib_init_lc_collate_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit.o)(.ARM.Collect$$libinit$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$00000013) for __rt_lib_init_lc_ctype_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit.o)(.ARM.Collect$$libinit$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$00000015) for __rt_lib_init_lc_monetary_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit.o)(.ARM.Collect$$libinit$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$00000017) for __rt_lib_init_lc_numeric_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit.o)(.ARM.Collect$$libinit$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$00000019) for __rt_lib_init_lc_time_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit.o)(.ARM.Collect$$libinit$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$00000004) for __rt_lib_init_preinit_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit.o)(.ARM.Collect$$libinit$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$0000000E) for __rt_lib_init_rand_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit.o)(.ARM.Collect$$libinit$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$00000033) for __rt_lib_init_return
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit.o)(.ARM.Collect$$libinit$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$0000001D) for __rt_lib_init_signal_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit.o)(.ARM.Collect$$libinit$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$00000025) for __rt_lib_init_stdio_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit.o)(.ARM.Collect$$libinit$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$0000000C) for __rt_lib_init_user_alloc_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libspace.o)(.text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libspace.o)(.bss) for __libspace_start
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rtexit.o)(.ARM.Collect$$rtexit$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rtexit2.o)(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rtexit.o)(.ARM.Collect$$rtexit$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rtexit2.o)(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rtexit.o)(.ARM.Collect$$rtexit$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rtexit2.o)(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rtexit.o)(.ARM.exidx) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rtexit2.o)(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rtexit.o)(.ARM.exidx) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rtexit2.o)(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rtexit.o)(.ARM.exidx) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rtexit2.o)(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rtexit.o)(.ARM.exidx) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rtexit.o)(.ARM.Collect$$rtexit$$00000000) for .ARM.Collect$$rtexit$$00000000
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$00000001) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\fz_wm.l(fpinit.o)(x$fpl$fpinit) for _fp_init
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$00000010) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$00000012) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$00000014) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$00000016) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$00000018) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$00000026) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(argv_veneer.o)(.emb_text) for __ARM_argv_veneer
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libinit2.o)(.ARM.Collect$$libinit$$00000027) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(argv_veneer.o)(.emb_text) for __ARM_argv_veneer
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rtexit2.o)(.ARM.Collect$$rtexit$$00000003) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libshutdown.o)(.ARM.Collect$$libshutdown$$00000000) for __rt_lib_shutdown
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rtexit2.o)(.ARM.Collect$$rtexit$$00000004) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(sys_exit.o)(.text) for _sys_exit
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rtexit2.o)(.ARM.exidx) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rtexit2.o)(.ARM.Collect$$rtexit$$00000001) for .ARM.Collect$$rtexit$$00000001
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rtexit2.o)(.ARM.exidx) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rtexit2.o)(.ARM.Collect$$rtexit$$00000003) for .ARM.Collect$$rtexit$$00000003
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rtexit2.o)(.ARM.exidx) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rtexit2.o)(.ARM.Collect$$rtexit$$00000004) for .ARM.Collect$$rtexit$$00000004
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(argv_veneer.o)(.emb_text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(no_argv.o)(.text) for __ARM_get_argv
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(sys_exit.o)(.text) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(use_no_semi.o)(.text) for __I$use$semihosting
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(sys_exit.o)(.text) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(indicate_semi.o)(.text) for __semihosting_library_function
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(_get_argv_nomalloc.o)(.text) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(hrguard.o)(.text) for __heap_region$guard
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(_get_argv_nomalloc.o)(.text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_rtmem_outer.o)(.text) for __rt_SIGRTMEM
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(_get_argv_nomalloc.o)(.text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(sys_command.o)(.text) for _sys_command_string
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libshutdown.o)(.ARM.Collect$$libshutdown$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libshutdown2.o)(.ARM.Collect$$libshutdown$$00000002) for __rt_lib_shutdown_cpp_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libshutdown.o)(.ARM.Collect$$libshutdown$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libshutdown2.o)(.ARM.Collect$$libshutdown$$00000007) for __rt_lib_shutdown_fp_trap_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libshutdown.o)(.ARM.Collect$$libshutdown$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libshutdown2.o)(.ARM.Collect$$libshutdown$$0000000F) for __rt_lib_shutdown_heap_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libshutdown.o)(.ARM.Collect$$libshutdown$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libshutdown2.o)(.ARM.Collect$$libshutdown$$00000010) for __rt_lib_shutdown_return
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libshutdown.o)(.ARM.Collect$$libshutdown$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libshutdown2.o)(.ARM.Collect$$libshutdown$$0000000A) for __rt_lib_shutdown_signal_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libshutdown.o)(.ARM.Collect$$libshutdown$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libshutdown2.o)(.ARM.Collect$$libshutdown$$00000004) for __rt_lib_shutdown_stdio_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libshutdown.o)(.ARM.Collect$$libshutdown$$00000000) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(libshutdown2.o)(.ARM.Collect$$libshutdown$$0000000C) for __rt_lib_shutdown_user_alloc_1
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(sys_command.o)(.text) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(use_no_semi.o)(.text) for __I$use$semihosting
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(sys_command.o)(.text) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(indicate_semi.o)(.text) for __semihosting_library_function
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_rtmem_outer.o)(.text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_rtmem_inner.o)(.text) for __rt_SIGRTMEM_inner
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_rtmem_outer.o)(.text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_exit.o)(.text) for __sig_exit
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_rtmem_formal.o)(.text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rt_raise.o)(.text) for __rt_raise
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rt_raise.o)(.text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__raise.o)(.text) for __raise
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(rt_raise.o)(.text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(sys_exit.o)(.text) for _sys_exit
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_exit.o)(.text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(sys_exit.o)(.text) for _sys_exit
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_rtmem_inner.o)(.text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_general.o)(.text) for __default_signal_display
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(__raise.o)(.text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig.o)(CL$$defsig) for __default_signal_handler
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_general.o)(.text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(sys_wrch.o)(.text) for _ttywrch
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(sys_wrch.o)(.text) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(use_no_semi.o)(.text) for __I$use$semihosting
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(sys_wrch.o)(.text) refers (Special) to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(indicate_semi.o)(.text) for __semihosting_library_function
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig.o)(CL$$defsig) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_rtmem_inner.o)(.text) for __rt_SIGRTMEM_inner
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_abrt_inner.o)(.text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_general.o)(.text) for __default_signal_display
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_fpe_inner.o)(.text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_general.o)(.text) for __default_signal_display
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_rtred_inner.o)(.text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_general.o)(.text) for __default_signal_display
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_stak_inner.o)(.text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_general.o)(.text) for __default_signal_display
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_pvfn_inner.o)(.text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_general.o)(.text) for __default_signal_display
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_cppl_inner.o)(.text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_general.o)(.text) for __default_signal_display
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_segv_inner.o)(.text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_general.o)(.text) for __default_signal_display
+    e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_other.o)(.text) refers to e:\Keil_v5\ARM\ARMCC\Bin\..\lib\armlib\c_w.l(defsig_general.o)(.text) for __default_signal_display
+
