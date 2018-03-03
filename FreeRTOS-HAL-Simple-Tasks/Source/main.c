@@ -53,7 +53,7 @@ int main () {
         HAL_Init() sets the default priority grouping
         to 4U (3-premption, 1-sub priority). FreeRTOS 
         highly recommend to set the priority grouping 
-        to premption only (0).
+        to only 0 i.e. preempt priorities only.
         
         webLink: https://www.freertos.org/RTOS-Cortex-M3-M4.html
     */
