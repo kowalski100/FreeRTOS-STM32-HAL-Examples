@@ -134,6 +134,10 @@ to exclude the API function. */
 #define INCLUDE_vTaskSuspend			1
 #define INCLUDE_vTaskDelayUntil			1
 #define INCLUDE_vTaskDelay				1
+/*
+    User defined
+*/
+#define INCLUDE_xTaskGetSchedulerState  1
 
 /* Cortex-M specific definitions. */
 #ifdef __NVIC_PRIO_BITS
@@ -171,4 +175,6 @@ standard names. */
 //#define xPortSysTickHandler SysTick_Handler
 
 #endif /* FREERTOS_CONFIG_H */
+
+
 

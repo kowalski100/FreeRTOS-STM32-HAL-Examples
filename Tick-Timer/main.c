@@ -31,8 +31,8 @@ void configureLEDs(void);
 /*
     Simple tasks to blink LEDs.
 */
-static void myTask1( void *pvParameters );
-static void myTask2( void *pvParameters );
+void myTask1( void *pvParameters );
+void myTask2( void *pvParameters );
 
 void vPortSetupTimerInterrupt (void);
 extern void xPortSysTickHandler( void );
@@ -136,7 +136,7 @@ void TIM2_IRQHandler (void) {
     xPortSysTickHandler();
 }
 
-static void myTask1( void *pvParameters ) {
+void myTask1( void *pvParameters ) {
     volatile unsigned int i = 0 ;
 
    while (1) {
@@ -147,7 +147,7 @@ static void myTask1( void *pvParameters ) {
    
 }
 
-static void myTask2( void *pvParameters ) {
+void myTask2( void *pvParameters ) {
     volatile unsigned int i = 0 ;
    
    while (1) {

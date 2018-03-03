@@ -16,33 +16,32 @@
  */
 
 #include "stm32f4xx_hal.h"
+#include "FreeRTOS.h"
+#include "task.h"
 
 /*
     Global Variables
 */
 TIM_HandleTypeDef TIM_InitStruct;
-
+GPIO_InitTypeDef GPIO_InitStruct;
 
 /*
     Configure onboard LEDs as output
 */
-void configureLEDs(void);
+static void configureLEDs(void);
 
 /*
     Simple tasks to blink LEDs.
 */
-static void myTask1( void *pvParameters );
-static void myTask2( void *pvParameters );
+void myTask1( void *pvParameters );
+void myTask2( void *pvParameters );
 
 /*
     For Tick Timer Configuration
 */
 void vPortSetupTimerInterrupt (void);
-extern void xPortSysTickHandler( void );
 
 int main () {
-    
-    GPIO_InitTypeDef GPIO_InitStruct;
     
     /*
         initialize HAL Library. This step is mandatory
@@ -58,28 +57,71 @@ int main () {
         clock (16MHz). PLL is disabled.
     */
     
-    /* Enable clock to GPIO-D */
-    __HAL_RCC_GPIOD_CLK_ENABLE();
+    /* initialize LEDs */
+    configureLEDs();
+ 
+    xTaskCreate( myTask1, "Task1", 50, NULL, 1, NULL);
+    xTaskCreate( myTask2, "Task2", 50, NULL, 1, NULL);
     
-    /* Set GPIOD Pin#15 Parameters */
-    GPIO_InitStruct.Pin     = GPIO_PIN_15;
-    GPIO_InitStruct.Mode    = GPIO_MODE_OUTPUT_PP;
-    GPIO_InitStruct.Pull    = GPIO_PULLDOWN;
-    GPIO_InitStruct.Speed   = GPIO_SPEED_FREQ_LOW;
-    /* Init GPIOD Pin#15 */
-    HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
+    /*
+        Start FreeRTOS Kernel Scheduler
+    */
+    vTaskStartScheduler();
+    
+    /*
+        wait until the scheduler starts.
+        This step is particularly important. if 
+        timer-2 (tick timer here) generate interrupt
+        before the schedular is ready, a Hard Fault
+        exception will rise.
+    */
+    while (xTaskGetSchedulerState() == taskSCHEDULER_NOT_STARTED);
+    
+    for (;;) {}
+ 
+}
+
+void myTask1( void *pvParameters ) {
+    volatile unsigned int i = 0;
+    
+    for (;;) {
+        
+        /* Toggle GPIOD Pin#14 --> RED LED on STM32F407-Discovery */
+        HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_14);
+
+        for (i = 0 ; i<60000; i++);
+    }
+
+}
+
+void myTask2( void *pvParameters ) {
+    volatile unsigned int i = 0;
     
     for (;;) {
         
         /* Toggle GPIOD Pin#15 --> BLUE LED on STM32F407-Discovery */
         HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_15);
         
-        /* 100ms second delay */
-        HAL_Delay(100);
-        
+        for (i = 0 ; i<80000; i++);
     }
-    
 }
+
+static void configureLEDs(void) {
+    
+    /* Enable clock to GPIO-D */
+    __HAL_RCC_GPIOD_CLK_ENABLE();
+    
+    /* Set GPIOD Pin#14, Pin#15 Parameters */
+    GPIO_InitStruct.Pin     = GPIO_PIN_14 | GPIO_PIN_15;
+    GPIO_InitStruct.Mode    = GPIO_MODE_OUTPUT_PP;
+    GPIO_InitStruct.Pull    = GPIO_PULLDOWN;
+    GPIO_InitStruct.Speed   = GPIO_SPEED_FREQ_LOW;
+    
+    /* Init GPIOD Pin#14,15 */
+    HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
+}
+
+
 
 /*********************************************
     
@@ -142,20 +184,19 @@ void vPortSetupTimerInterrupt (void) {
     */
     while (HAL_TIM_Base_Init(&TIM_InitStruct)!= HAL_OK);
 
-    /*
-        Enable timer-2 IRQ interrupt
-    */
-    HAL_TIM_Base_Start_IT(&TIM_InitStruct);
-
     /* Enable interrupt at IRQ-Level */
     HAL_NVIC_EnableIRQ(TIM2_IRQn);
-        
-    /* Tick timer should have least priority */
-    NVIC_SetPriority(TIM2_IRQn,0xff);    
+    
+    /* 
+        Tick timer should have least priority
+        In STM32F4, the lowest Prioirty is 0xf.
+    */
+    NVIC_SetPriority(TIM2_IRQn,0x0fU);
     
     /*
-        Start the timer
+        Start Timer and enable timer-2 IRQ interrupt
     */
-    HAL_TIM_Base_Start(&TIM_InitStruct);
+    HAL_TIM_Base_Start_IT(&TIM_InitStruct);
+    
 }
 

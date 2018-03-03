@@ -52,9 +52,15 @@
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
-
+extern TIM_HandleTypeDef TIM_InitStruct;
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
+
+/*
+    For Tick Timer Configuration
+*/
+extern void xPortSysTickHandler( void );
+
 
 /******************************************************************************/
 /*            Cortex-M4 Processor Exceptions Handlers                         */
@@ -161,6 +167,16 @@ void SysTick_Handler(void)
 {
   HAL_IncTick();
   HAL_SYSTICK_IRQHandler();
+}
+
+
+void TIM2_IRQHandler (void) {
+    
+    /* clear timer interrupt */
+    __HAL_TIM_CLEAR_IT(&TIM_InitStruct, TIM_IT_UPDATE);
+
+    /* call the FreeRTOS kernel for a tick update*/
+    xPortSysTickHandler();
 }
 
 /******************************************************************************/
