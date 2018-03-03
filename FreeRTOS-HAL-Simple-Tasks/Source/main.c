@@ -20,10 +20,9 @@
 #include "task.h"
 
 /*
-    Global Variables
+    Global Variables, Accessed in other files as well
 */
 TIM_HandleTypeDef TIM_InitStruct;
-GPIO_InitTypeDef GPIO_InitStruct;
 
 /*
     Configure onboard LEDs as output
@@ -50,6 +49,14 @@ int main () {
     */
     HAL_Init();
     
+    /*
+        HAL_Init() sets the default priority grouping
+        to 4U (3-premption, 1-sub priority). FreeRTOS 
+        highly recommend to set the priority grouping 
+        to premption only (0).
+        
+        webLink: https://www.freertos.org/RTOS-Cortex-M3-M4.html
+    */
     NVIC_SetPriorityGrouping(0U);
 
     /*
@@ -73,7 +80,7 @@ int main () {
         This step is particularly important. if 
         timer-2 (tick timer here) generate interrupt
         before the schedular is ready, a Hard Fault
-        exception will rise.
+        exception will occure.
     */
     while (xTaskGetSchedulerState() == taskSCHEDULER_NOT_STARTED);
     
@@ -107,6 +114,8 @@ void myTask2( void *pvParameters ) {
 }
 
 static void configureLEDs(void) {
+
+    GPIO_InitTypeDef GPIO_InitStruct;
     
     /* Enable clock to GPIO-D */
     __HAL_RCC_GPIOD_CLK_ENABLE();
