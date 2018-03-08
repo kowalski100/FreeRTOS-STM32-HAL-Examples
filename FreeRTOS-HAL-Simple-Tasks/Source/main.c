@@ -79,8 +79,8 @@ int main () {
         wait until the scheduler starts.
         This step is particularly important. if 
         timer-2 (tick timer here) generate interrupt
-        before the schedular is ready, a Hard Fault
-        exception will occure.
+        before the scheduler is ready, a Hard Fault
+        exception will occur.
     */
     while (xTaskGetSchedulerState() == taskSCHEDULER_NOT_STARTED);
     
