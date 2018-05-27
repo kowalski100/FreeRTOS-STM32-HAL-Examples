@@ -34,7 +34,7 @@ const char *t2_Msg = "Task-2 Message...";
 
 int main () {
   
-  qHandle = xQueueCreate(2, sizeof(char *));
+  qHandle = xQueueCreate(1, sizeof(char *));
   
   if (qHandle != NULL) {
 
@@ -65,13 +65,13 @@ void vTxTask1(void * pvParams) {
 
     printf("Sending Msg-Task-1\n");
 
-    txStatus = xQueueSendToBack(qHandle, &t1_Msg, 3);
+    txStatus = xQueueSendToBack(qHandle, &t1_Msg, 2);
 
     if (0 == txStatus) {
       
       printf("Sending failed Task-1!\n");
     
-    }    
+    }
     /*
       This will prevent display printf messages too fast.
       also task yelding not required
@@ -90,7 +90,7 @@ void vTxTask2(void * pvParams) {
 
     printf("Sending Msg-Task-2\n");
 
-    txStatus = xQueueSendToBack(qHandle, &t2_Msg, 3);
+    txStatus = xQueueSendToBack(qHandle, &t2_Msg, 2);
 
     if (0 == txStatus) {
     
@@ -114,7 +114,7 @@ void vRxTask(void * pvParams) {
   
   for (;;) {
     
-    rxStatus = xQueueReceive(qHandle, &msgPtr, 500);
+    rxStatus = xQueueReceive(qHandle, &msgPtr, 500); /* 500 is enough to compensate dummy delay in transmitter tasks.*/
 
     if (0 == rxStatus) {
       printf ("Awaiting Message...\n");
