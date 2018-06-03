@@ -22,7 +22,7 @@
   </DaveTm>
 
   <Target>
-    <TargetName>FreeRTOS-Queues</TargetName>
+    <TargetName>FreeRTOS-Semaphore-Signalling</TargetName>
     <ToolsetNumber>0x4</ToolsetNumber>
     <ToolsetName>ARM-ADS</ToolsetName>
     <TargetOption>

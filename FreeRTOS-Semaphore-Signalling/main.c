@@ -134,6 +134,12 @@ static void configInputPin (void) {
 
 void vTask(void * pvParams) {
 
+  /* 
+    initially take semaphore to bring the
+    binary semaphore counter value to 0.
+  */
+  xSemaphoreTake(smphrHandle, portMAX_DELAY);
+
   for (;;) {
     /* Lock Task here until unlocked by ISR*/
     xSemaphoreTake(smphrHandle, portMAX_DELAY);
