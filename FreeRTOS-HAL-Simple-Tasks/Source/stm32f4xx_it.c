@@ -39,6 +39,8 @@
 #include "stm32f4xx_hal.h"
 #include "stm32f4xx.h"
 #include "stm32f4xx_it.h"
+#include "FreeRTOS.h"
+#include "task.h"
 
 /** @addtogroup STM32F4xx_HAL_Examples
   * @{
@@ -175,8 +177,18 @@ void TIM2_IRQHandler (void) {
     /* clear timer interrupt */
     __HAL_TIM_CLEAR_IT(&TIM_InitStruct, TIM_IT_UPDATE);
 
+    /*
+        wait until the scheduler starts.
+        This step is particularly important. if 
+        timer-2 (tick timer here) generate interrupt
+        before the scheduler is ready, a Hard Fault
+        exception will occur.
+    */	
+	if (xTaskGetSchedulerState() == taskSCHEDULER_RUNNING) {
     /* call the FreeRTOS kernel for a tick update*/
     xPortSysTickHandler();
+	}
+	
 }
 
 /******************************************************************************/
