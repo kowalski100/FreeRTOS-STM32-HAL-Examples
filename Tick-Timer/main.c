@@ -126,7 +126,9 @@ void vPortSetupTimerInterrupt (void) {
 
 }
 
-
+#ifdef __cplusplus
+	extern "C" {
+#endif
 void TIM2_IRQHandler (void) {
     
     /* clear timer interrupt */
@@ -135,6 +137,10 @@ void TIM2_IRQHandler (void) {
     /* call the FreeRTOS kernel for a tick update*/
     xPortSysTickHandler();
 }
+
+#ifdef __cplusplus
+	}
+#endif
 
 void myTask1( void *pvParameters ) {
     volatile unsigned int i = 0 ;
