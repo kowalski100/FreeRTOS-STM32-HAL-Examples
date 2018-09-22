@@ -22,7 +22,7 @@
   </DaveTm>
 
   <Target>
-    <TargetName>FreeRTOS-Simple-Tasks</TargetName>
+    <TargetName>FreeRTOS-Task-Params</TargetName>
     <ToolsetNumber>0x4</ToolsetNumber>
     <ToolsetName>ARM-ADS</ToolsetName>
     <TargetOption>

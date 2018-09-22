@@ -2,7 +2,7 @@
 @author:    Ijaz Ahmad
 
 @descp:     This program creates two simple freeRTOS
-            tasks. after each 20 context switching,
+            tasks. after 20 context switching,
             task-1 is deleted and only task-2 runs
             onward.
             
@@ -22,6 +22,7 @@ void vTask(void * pvParams);
 
 TaskHandle_t hTask1;
 int counter = 0;
+int flag = 0;
 
 int main () {
 
@@ -42,21 +43,30 @@ void vTask(void * pvParams) {
   const int * tParam = (const int *)pvParams;
  
   for (;;) {
+
+    /*
+      if flag is set, it means the Task-1 is deleted
+      so give some time to idle task to reclaim memory
+    */
+    if (flag == 1) {
+      vTaskDelay(1);
+      flag  = 0;
+    }
     
-    printf("Task-%d Running.\n", *tParam);  
+    printf("Task-%d Running.\n", *tParam);
  
     /*
       prevents useless counting and redeletion of deleted task on overflow.
     */
+    
     if (counter <=20) {
       counter++;
     }
-    if (counter == 20) {
-      
+    
+    if (counter == 20) {      
       printf("Deleting Task-1....\n");
+      flag = 1;
       vTaskDelete(hTask1);
-      counter = 0;
-      vTaskDelay(2*portTICK_PERIOD_MS);
     }
     
     /*Dummy Delay - Lazy work */

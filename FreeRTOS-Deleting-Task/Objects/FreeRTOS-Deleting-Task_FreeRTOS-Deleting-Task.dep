@@ -1,0 +1,116 @@
+Dependencies for Project 'FreeRTOS-Deleting-Task', Target 'FreeRTOS-Deleting-Task': (DO NOT MODIFY !)
+F (.\main.c)(0x5BA611EE)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\FreeRTOS-Source\include -I ..\FreeRTOS-Source\portable\RVDS\ARM_CM4F -I ..\FreeRTOS-Deleting-Task-I.\RTE\_FreeRTOS-Deleting-Task-Ie:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-Ie:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (e:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F6D9A8)
+I (..\FreeRTOS-Source\include\FreeRTOS.h)(0x573F3A16)
+I (e:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F6D9A8)
+I (e:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F6D9A8)
+I (..\FreeRTOS-Deleting-Task\FreeRTOSConfig.h)(0x5AE098DA)
+I (..\FreeRTOS-Source\include\projdefs.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\portable.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\FreeRTOS-Source\portable\RVDS\ARM_CM4F\portmacro.h)(0x573F3A17)
+I (..\FreeRTOS-Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\task.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\list.h)(0x573F3A16)
+F (..\FreeRTOS-Source\list.c)(0x573F3A16)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\FreeRTOS-Source\include -I ..\FreeRTOS-Source\portable\RVDS\ARM_CM4F -I ..\FreeRTOS-Deleting-Task-I.\RTE\_FreeRTOS-Deleting-Task-Ie:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-Ie:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx-o .\objects\list.o --omf_browse .\objects\list.crf --depend .\objects\list.d)
+I (e:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F6D9A8)
+I (..\FreeRTOS-Source\include\FreeRTOS.h)(0x573F3A16)
+I (e:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F6D9A8)
+I (e:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F6D9A8)
+I (..\FreeRTOS-Deleting-Task\FreeRTOSConfig.h)(0x5AE098DA)
+I (..\FreeRTOS-Source\include\projdefs.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\portable.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\FreeRTOS-Source\portable\RVDS\ARM_CM4F\portmacro.h)(0x573F3A17)
+I (..\FreeRTOS-Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\list.h)(0x573F3A16)
+F (..\FreeRTOS-Source\queue.c)(0x573F3A17)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\FreeRTOS-Source\include -I ..\FreeRTOS-Source\portable\RVDS\ARM_CM4F -I ..\FreeRTOS-Deleting-Task-I.\RTE\_FreeRTOS-Deleting-Task-Ie:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-Ie:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx-o .\objects\queue.o --omf_browse .\objects\queue.crf --depend .\objects\queue.d)
+I (e:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F6D9A8)
+I (e:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F6D9A8)
+I (..\FreeRTOS-Source\include\FreeRTOS.h)(0x573F3A16)
+I (e:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F6D9A8)
+I (e:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F6D9A8)
+I (..\FreeRTOS-Deleting-Task\FreeRTOSConfig.h)(0x5AE098DA)
+I (..\FreeRTOS-Source\include\projdefs.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\portable.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\FreeRTOS-Source\portable\RVDS\ARM_CM4F\portmacro.h)(0x573F3A17)
+I (..\FreeRTOS-Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\task.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\list.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\queue.h)(0x573F3A16)
+F (..\FreeRTOS-Source\tasks.c)(0x599712F4)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\FreeRTOS-Source\include -I ..\FreeRTOS-Source\portable\RVDS\ARM_CM4F -I ..\FreeRTOS-Deleting-Task-I.\RTE\_FreeRTOS-Deleting-Task-Ie:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-Ie:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx-o .\objects\tasks.o --omf_browse .\objects\tasks.crf --depend .\objects\tasks.d)
+I (e:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F6D9A8)
+I (e:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F6D9A8)
+I (..\FreeRTOS-Source\include\FreeRTOS.h)(0x573F3A16)
+I (e:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F6D9A8)
+I (e:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F6D9A8)
+I (..\FreeRTOS-Deleting-Task\FreeRTOSConfig.h)(0x5AE098DA)
+I (..\FreeRTOS-Source\include\projdefs.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\portable.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\FreeRTOS-Source\portable\RVDS\ARM_CM4F\portmacro.h)(0x573F3A17)
+I (..\FreeRTOS-Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\task.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\list.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\timers.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\StackMacros.h)(0x573F3A16)
+F (..\FreeRTOS-Source\timers.c)(0x573F3A17)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\FreeRTOS-Source\include -I ..\FreeRTOS-Source\portable\RVDS\ARM_CM4F -I ..\FreeRTOS-Deleting-Task-I.\RTE\_FreeRTOS-Deleting-Task-Ie:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-Ie:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx-o .\objects\timers.o --omf_browse .\objects\timers.crf --depend .\objects\timers.d)
+I (e:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F6D9A8)
+I (..\FreeRTOS-Source\include\FreeRTOS.h)(0x573F3A16)
+I (e:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F6D9A8)
+I (e:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F6D9A8)
+I (..\FreeRTOS-Deleting-Task\FreeRTOSConfig.h)(0x5AE098DA)
+I (..\FreeRTOS-Source\include\projdefs.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\portable.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\FreeRTOS-Source\portable\RVDS\ARM_CM4F\portmacro.h)(0x573F3A17)
+I (..\FreeRTOS-Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\task.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\list.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\queue.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\timers.h)(0x573F3A16)
+F (..\FreeRTOS-Source\portable\MemMang\heap_2.c)(0x573F3A16)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\FreeRTOS-Source\include -I ..\FreeRTOS-Source\portable\RVDS\ARM_CM4F -I ..\FreeRTOS-Deleting-Task-I.\RTE\_FreeRTOS-Deleting-Task-Ie:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-Ie:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx-o .\objects\heap_2.o --omf_browse .\objects\heap_2.crf --depend .\objects\heap_2.d)
+I (e:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F6D9A8)
+I (..\FreeRTOS-Source\include\FreeRTOS.h)(0x573F3A16)
+I (e:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F6D9A8)
+I (e:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F6D9A8)
+I (..\FreeRTOS-Deleting-Task\FreeRTOSConfig.h)(0x5AE098DA)
+I (..\FreeRTOS-Source\include\projdefs.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\portable.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\FreeRTOS-Source\portable\RVDS\ARM_CM4F\portmacro.h)(0x573F3A17)
+I (..\FreeRTOS-Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\task.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\list.h)(0x573F3A16)
+F (..\FreeRTOS-Source\portable\RVDS\ARM_CM4F\port.c)(0x5B0A687C)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\FreeRTOS-Source\include -I ..\FreeRTOS-Source\portable\RVDS\ARM_CM4F -I ..\FreeRTOS-Deleting-Task-I.\RTE\_FreeRTOS-Deleting-Task-Ie:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-Ie:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx-o .\objects\port.o --omf_browse .\objects\port.crf --depend .\objects\port.d)
+I (..\FreeRTOS-Source\include\FreeRTOS.h)(0x573F3A16)
+I (e:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F6D9A8)
+I (e:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F6D9A8)
+I (..\FreeRTOS-Deleting-Task\FreeRTOSConfig.h)(0x5AE098DA)
+I (..\FreeRTOS-Source\include\projdefs.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\portable.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\FreeRTOS-Source\portable\RVDS\ARM_CM4F\portmacro.h)(0x573F3A17)
+I (..\FreeRTOS-Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\task.h)(0x573F3A16)
+I (..\FreeRTOS-Source\include\list.h)(0x573F3A16)
+F (e:\Keil_v5\ARM\PACK\Keil\ARM_Compiler\1.3.0\Source\retarget_io.c)(0x584EFCAE)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\FreeRTOS-Source\include -I ..\FreeRTOS-Source\portable\RVDS\ARM_CM4F -I ..\FreeRTOS-Deleting-Task-I.\RTE\_FreeRTOS-Deleting-Task-Ie:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-Ie:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx-o .\objects\retarget_io.o --omf_browse .\objects\retarget_io.crf --depend .\objects\retarget_io.d)
+I (e:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F6D9A8)
+I (e:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F6D9A8)
+I (e:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F6D9A8)
+I (e:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F6D9A8)
+I (e:\Keil_v5\ARM\ARMCC\include\assert.h)(0x57F6D9A6)
+I (e:\Keil_v5\ARM\ARMCC\include\rt_sys.h)(0x57F6D9A8)
+I (.\RTE\_FreeRTOS-Deleting-Task\RTE_Components.h)(0x5AF87439)
+F (RTE\Device\STM32F407VGTx\startup_stm32f407xx.s)(0x5A41D94E)(--cpu Cortex-M4.fp -g --apcs=interwork -I.\RTE\_FreeRTOS-Deleting-Task-Ie:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-Ie:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 523" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1"--list .\listings\startup_stm32f407xx.lst --xref -o .\objects\startup_stm32f407xx.o --depend .\objects\startup_stm32f407xx.d)
+F (RTE\Device\STM32F407VGTx\system_stm32f4xx.c)(0x5A41D94E)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\FreeRTOS-Source\include -I ..\FreeRTOS-Source\portable\RVDS\ARM_CM4F -I ..\FreeRTOS-Deleting-Task-I.\RTE\_FreeRTOS-Deleting-Task-Ie:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-Ie:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx-o .\objects\system_stm32f4xx.o --omf_browse .\objects\system_stm32f4xx.crf --depend .\objects\system_stm32f4xx.d)
+I (e:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5A41D94E)
+I (e:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5A41D94E)
+I (e:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm4.h)(0x5A8EF2D2)
+I (e:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F6D9A8)
+I (e:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_version.h)(0x5A5668D2)
+I (e:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_compiler.h)(0x5A8EF2D2)
+I (e:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_armcc.h)(0x5A8EF2D2)
+I (e:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\mpu_armv7.h)(0x5A8EF2D2)
+I (e:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5A41D94E)

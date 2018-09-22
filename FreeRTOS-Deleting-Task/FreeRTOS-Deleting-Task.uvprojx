@@ -335,7 +335,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\FreeRTOS-Source\include;..\FreeRTOS-Source\portable\RVDS\ARM_CM4F;..\FreeRTOS-Simple-Tasks</IncludePath>
+              <IncludePath>..\FreeRTOS-Source\include;..\FreeRTOS-Source\portable\RVDS\ARM_CM4F;..\FreeRTOS-Deleting-Task</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>

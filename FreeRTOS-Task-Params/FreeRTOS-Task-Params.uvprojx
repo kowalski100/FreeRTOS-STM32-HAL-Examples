@@ -7,7 +7,7 @@
 
   <Targets>
     <Target>
-      <TargetName>FreeRTOS-Simple-Tasks</TargetName>
+      <TargetName>FreeRTOS-Task-Params</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
@@ -48,7 +48,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\Objects\</OutputDirectory>
-          <OutputName>FreeRTOS-Simple-Tasks</OutputName>
+          <OutputName>FreeRTOS-Passing-Parms</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
@@ -335,7 +335,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\FreeRTOS-Source\include;..\FreeRTOS-Source\portable\RVDS\ARM_CM4F;..\FreeRTOS-Simple-Tasks</IncludePath>
+              <IncludePath>..\FreeRTOS-Source\include;..\FreeRTOS-Source\portable\RVDS\ARM_CM4F;..\FreeRTOS-Task-Params</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -440,19 +440,19 @@
       <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.1.1" condition="ARMv6_7_8-M Device">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.3.0"/>
         <targetInfos>
-          <targetInfo name="FreeRTOS-Simple-Tasks"/>
+          <targetInfo name="FreeRTOS-Task-Params"/>
         </targetInfos>
       </component>
       <component Cbundle="ARM Compiler" Cclass="Compiler" Cgroup="I/O" Csub="STDOUT" Cvariant="ITM" Cvendor="Keil" Cversion="1.2.0" condition="ARMCC Cortex-M with ITM">
         <package name="ARM_Compiler" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="Keil" version="1.3.0"/>
         <targetInfos>
-          <targetInfo name="FreeRTOS-Simple-Tasks"/>
+          <targetInfo name="FreeRTOS-Task-Params"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.6.2" condition="STM32F4 CMSIS">
         <package name="STM32F4xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.12.0"/>
         <targetInfos>
-          <targetInfo name="FreeRTOS-Simple-Tasks"/>
+          <targetInfo name="FreeRTOS-Task-Params"/>
         </targetInfos>
       </component>
     </components>
@@ -462,7 +462,7 @@
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.6.2" condition="STM32F4 CMSIS"/>
         <package name="STM32F4xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.12.0"/>
         <targetInfos>
-          <targetInfo name="FreeRTOS-Simple-Tasks"/>
+          <targetInfo name="FreeRTOS-Task-Params"/>
         </targetInfos>
       </file>
       <file attr="config" category="source" name="Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c" version="2.6.2">
@@ -470,7 +470,7 @@
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.6.2" condition="STM32F4 CMSIS"/>
         <package name="STM32F4xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.12.0"/>
         <targetInfos>
-          <targetInfo name="FreeRTOS-Simple-Tasks"/>
+          <targetInfo name="FreeRTOS-Task-Params"/>
         </targetInfos>
       </file>
     </files>
