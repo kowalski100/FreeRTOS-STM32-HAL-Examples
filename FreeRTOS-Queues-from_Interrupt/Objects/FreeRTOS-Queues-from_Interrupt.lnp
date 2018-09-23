@@ -1,0 +1,15 @@
+--cpu=Cortex-M4.fp
+".\objects\main.o"
+".\objects\list.o"
+".\objects\queue.o"
+".\objects\tasks.o"
+".\objects\timers.o"
+".\objects\heap_2.o"
+".\objects\port.o"
+".\objects\retarget_io.o"
+".\objects\startup_stm32f407xx.o"
+".\objects\system_stm32f4xx.o"
+--strict --scatter ".\Objects\FreeRTOS-Queues-from_Interrupt.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\FreeRTOS-Queues-from_Interrupt.map" -o .\Objects\FreeRTOS-Queues-from_Interrupt.axf
