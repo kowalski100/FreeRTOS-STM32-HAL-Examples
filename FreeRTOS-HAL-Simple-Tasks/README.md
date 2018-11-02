@@ -1,3 +1,3 @@
 # FreeRTOS-STM32-HAL-Examples
 
-## TUTORIAL DETAILS : www.embedded-soc.tk
+## TUTORIAL DETAILS : https://embedded-soc.000webhostapp.com/
